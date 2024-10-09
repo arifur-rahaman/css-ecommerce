@@ -18,11 +18,49 @@ img {
 }
 
 :root {
-  --primary-color: rgb(11, 181, 48);
-  --secodary-color: rgba(36, 122, 55, 0.9);
+  --primary-color: #31304d;
+  --secodary-color: #b6bbc4;
+  --text-color: #161a30;
+  --bg-light: #f0ece5;
   --padding: 0.5rem;
   --transition: all 0.2s;
   --border-radius: 0.6rem;
   --box-shadow: 0.1rem 0.2rem 0.8rem rgba(255, 202, 202, 0.5);
 }
+
 /* reset code and common ends here */
+
+nav {
+  font-family: fantasy;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.nav-upper {
+  background-color: var(--primary-color);
+  min-height: 8vh;
+  padding: var(--padding);
+}
+
+.nav-lower {
+  background-color: var(--secodary-color);
+  min-height: 8vh;
+  padding: var(--padding);
+}
+
+.nav-upper .nav__link {
+  color: var(--bg-light);
+}
+
+.nav__list {
+  transition: var(--transition);
+}
+
+.nav-upper .nav__link:hover {
+  color: black;
+  text-decoration: overline;
+  transform: scale(1.01);
+}
