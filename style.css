@@ -30,6 +30,7 @@ img {
 
 /* reset code and common ends here */
 
+/* nav start here */
 nav {
   font-family: fantasy;
   font-size: 1.2rem;
@@ -51,16 +52,34 @@ nav {
   padding: var(--padding);
 }
 
-.nav-upper .nav__link {
-  color: var(--bg-light);
+.nav__list {
+  transition: var(--transition);
 }
 
-.nav__list {
+.nav__list:hover {
+  text-decoration: overline;
+}
+
+.nav-upper .nav__link {
+  color: var(--bg-light);
   transition: var(--transition);
 }
 
 .nav-upper .nav__link:hover {
   color: black;
-  text-decoration: overline;
-  transform: scale(1.01);
 }
+
+.profile-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: white 1px solid;
+  /* for black and white */
+  filter: saturate(0);
+}
+
+.profile-icon:hover {
+  /* when some body hover it; will be as its original color */
+  filter: saturate(1);
+}
+/* nav ends here */
