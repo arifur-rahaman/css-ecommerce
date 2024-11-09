@@ -28,11 +28,17 @@ img {
   --box-shadow: 0.1rem 0.2rem 0.8rem rgba(255, 202, 202, 0.5);
 }
 
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 /* reset code and common ends here */
 
 /* nav start here */
 nav {
-  font-family: fantasy;
+  font-family: roboto;
   font-size: 1.2rem;
   position: sticky;
   top: 0;
@@ -50,6 +56,7 @@ nav {
   background-color: var(--secodary-color);
   min-height: 8vh;
   padding: var(--padding);
+  font-weight: bolder;
 }
 
 .nav__list {
@@ -61,12 +68,12 @@ nav {
 }
 
 .nav-upper .nav__link {
-  color: var(--bg-light);
+  color: var(--secodary-color);
   transition: var(--transition);
 }
 
 .nav-upper .nav__link:hover {
-  color: black;
+  color: var(--bg-light);
 }
 
 .profile-icon {
@@ -82,4 +89,16 @@ nav {
   /* when some body hover it; will be as its original color */
   filter: saturate(1);
 }
+
+.nav__brand {
+  font-size: 1.8rem;
+}
+
 /* nav ends here */
+
+/* footer starts here */
+.footer {
+  background-color: var(--primary-color);
+  padding: 25px 0;
+  color: var(--secodary-color);
+}

@@ -3,9 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product</title>
+    <title>CSS Ecommerce</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <h1>Product</h1>
+    <!-- nav starts here -->
+    <nav>
+      <ul class="nav-upper flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__list">
+          <a href="register.html" class="nav__link">Register</a>
+        </li>
+
+        <li class="nav__list">
+          <a href="product.html" class="nav__link">Product</a>
+        </li>
+
+        <li class="nav__list">
+          <a href="profile.html" class="nav__link">Profile</a>
+        </li>
+        <li class="nav__list">
+          <a href="cart.html" class="nav__link">Cart</a>
+        </li>
+        <li class="nav__list">
+          <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+        <li class="nav__list">
+          <a href="login.html" class="nav__link">Login</a>
+        </li>
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Logout</a>
+        </li>
+        <li class="nav__list">
+          <a href="profile.html" class="nav__link">
+            <img
+              src="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="profile picture"
+              class="profile-icon"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <!-- nav lower part -->
+      <ul class="nav-lower flex-space-around
+        <li class="nav__list">
+          <a href="index.html" class="nav__brand">WhatNot Shop</a>
+        </li>
+        <li class="nav__list">
+          <a href="cart.html" class="nav__brand"
+            ><span><i class="fa-solid fa-cart-shopping"></i></span>
+            Cart 2 Products - $120.50
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- nav ends here -->
+
+    <main>
+      <h2>I am Product here</h2>
+
+
+      <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+          <label for="subscribe">Subscribe to Newsletter: </label>
+          <input type="email" name="subscribe" id=subscribe" class="footer__input" placeholder="Type your email">
+        <button class="btn btn-subscribe">Subscribe</button>
+        </div>
+        <div >
+          <p>&copy; Copyright 2023 WhatNot Shop. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
